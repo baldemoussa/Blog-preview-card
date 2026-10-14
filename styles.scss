@@ -1,0 +1,49 @@
+$color_1: hsl(0, 0%, 7%);
+$color_2: hsl(47, 88%, 63%);
+$font-family_1: 'Figtree', sans-serif;
+$background-color_1: hsl(47, 88%, 63%);
+$background-color_2: hsl(0, 0%, 7%);
+
+@import "https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap";
+body {
+	font-family: $font-family_1;
+	background-color: $background-color_1;
+}
+.card {
+	width: 384px;
+	height: 522px;
+	box-shadow: 15px 15px 10px 0px rgba(0, 0, 0, 1);
+}
+.learnig-button {
+	background-color: $background-color_1;
+	color: $color_1;
+	font-size: 14px;
+	border-radius: 5px;
+	&:hover {
+		background-color: $background-color_2;
+		color: $color_2;
+		outline: none;
+	}
+	&:focus-visible {
+		background-color: $background-color_2;
+		color: $color_2;
+		outline: none;
+	}
+}
+.title-card {
+	&:hover {
+		color: $color_2;
+	}
+	&:focus-visible {
+		color: $color_2;
+	}
+	&:active {
+		color: $color_2;
+	}
+}
+@media (min-width: 768px) {
+	.card {
+		width: 384px;
+		max-width: 90%;
+	}
+}
